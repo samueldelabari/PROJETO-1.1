@@ -1,0 +1,232 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{longtable}
+
+\geometry{margin=2.5cm}
+
+\title{Projeto de Instalação e Exploração de Distribuições Linux em Máquinas Virtuais}
+
+\author{
+Michael Guerra \\
+Samuel Delabari \\
+}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Este artigo apresenta a instalação, configuração e exploração das distribuições Linux openSUSE e Ubuntu em máquinas virtuais. Utilizando a metodologia Scrum, as tarefas foram planejadas em sprints com colaboração da equipe. As atividades incluíram instalação de pacotes essenciais, programação em Python e C, manipulação de arquivos e execução de códigos previamente desenvolvidos. O estudo destaca diferenças técnicas entre as distribuições, organização do grupo, resolução de problemas e benefícios da aplicação de práticas ágeis em projetos acadêmicos.
+\end{abstract}
+
+\section{Introdução}
+
+Este relatório apresenta de forma detalhada as atividades desenvolvidas pelo grupo durante o projeto de instalação, configuração e exploração de duas distribuições Linux (openSUSE e Ubuntu) em máquinas virtuais.
+
+O trabalho foi conduzido a partir da metodologia ágil Scrum, com divisão em sprints, uso de ferramentas de apoio como Trello, GitHub e WhatsApp, e atribuição de tarefas entre os integrantes.
+
+O objetivo principal foi explorar o funcionamento dos sistemas operacionais em ambientes virtuais, realizar instalações de pacotes, linguagens de programação (C e Python), comandos de manipulação de arquivos e execução de códigos previamente desenvolvidos em disciplinas anteriores.
+
+\section{Objetivo Geral}
+
+Desenvolver um projeto acadêmico que demonstre a utilização de máquinas virtuais para rodar sistemas operacionais em segundo plano, aplicando a metodologia ágil Scrum para organização e acompanhamento das atividades.
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item Simular o ambiente de uma empresa no desenvolvimento de um produto tecnológico;
+    \item Definir papéis e responsabilidades dentro da equipe utilizando Scrum;
+    \item Configurar máquinas virtuais com openSUSE e Ubuntu;
+    \item Executar programas em Python e C nos sistemas virtuais;
+    \item Documentar cada etapa do processo;
+    \item Refletir sobre os benefícios e desafios de metodologias ágeis em projetos acadêmicos e profissionais.
+\end{itemize}
+
+\section{Metodologia -- Uso do Scrum}
+
+O projeto foi conduzido utilizando o framework ágil Scrum, uma metodologia voltada para gerenciamento de projetos que permite organizar e acompanhar tarefas de forma iterativa e incremental.
+
+\subsection{Papéis no Projeto}
+
+\begin{itemize}
+    \item Michael: Product Owner;
+    \item Samuel: Time de Desenvolvimento.
+\end{itemize}
+
+\subsection{Ferramentas Utilizadas}
+
+\begin{itemize}
+    \item GitHub 
+    \item Trello;
+    \item WhatsApp.
+\end{itemize}
+
+\section{Reuniões e Planejamento}
+
+\begin{itemize}
+    \item Daily Meetings: comunicação realizada via WhatsApp;
+    \item Sprint Planning: definição das tarefas;
+    \item Sprint Review: avaliação do andamento pelo professor;
+    \item Retrospectiva: discussão sobre pontos fortes e melhorias.
+\end{itemize}
+
+\section{Critérios de Conclusão das Tarefas}
+
+Os critérios para a conclusão das tarefas foram definidos de forma a garantir que todas as atividades fossem devidamente verificadas e registradas.
+
+\section{Detalhamento das Sprints}
+
+\subsection{1ª Sprint}
+
+Na primeira sprint foram realizadas as instalações das máquinas virtuais. Michael instalou o openSUSE e o Ubuntu. Samuel ficou responsável por pesquisas sobre as diferenças entre as distribuições Linux.
+
+\subsection{2ª Sprint}
+
+Durante a segunda sprint foram realizadas diversas atividades nas máquinas virtuais.
+
+Michael, no openSUSE, e no Ubuntu, realizou:
+
+\begin{itemize}
+    \item Instalação de pacotes e programas essenciais;
+    \item Instalação das linguagens Python e C;
+    \item Manipulação de arquivos e diretórios;
+    \item Execução de programas desenvolvidos anteriormente;
+    \item Navegação no sistema.
+\end{itemize}
+
+\subsubsection{Comandos Básicos}
+
+\begin{itemize}
+    \item \texttt{mkdir}: cria diretórios;
+    \item \texttt{rmdir}: remove diretórios vazios;
+    \item \texttt{cd}: navega entre diretórios;
+    \item \texttt{ls}: lista arquivos;
+    \item \texttt{pwd}: mostra o diretório atual.
+\end{itemize}
+
+\subsubsection{Instalação de Pacotes}
+
+\begin{verbatim}
+sudo zypper refresh
+sudo zypper install pacote
+\end{verbatim}
+
+Ubuntu:
+
+\begin{verbatim}
+sudo apt update
+sudo apt install pacote
+\end{verbatim}
+
+\subsubsection{Execução de Programas em Python}
+
+\begin{verbatim}
+nano arquivo.py
+python3 arquivo.py
+\end{verbatim}
+
+\subsubsection{Execução de Programas em C}
+
+\begin{verbatim}
+nano arquivo.c
+gcc arquivo.c
+./a.out
+\end{verbatim}
+
+\subsection{3ª Sprint}
+
+\begin{itemize}
+    \item Demonstração final das máquinas virtuais;
+    \item Criação dos slides;
+    \item Elaboração do relatório final.
+\end{itemize}
+
+\section{Desafios e Soluções}
+
+\begin{itemize}
+    \item Limitação inicial de computadores;
+    \item Lentidão da máquina virtual devido à memória limitada.
+\end{itemize}
+
+\section{Benefícios da Metodologia Scrum}
+
+\begin{itemize}
+    \item Organização clara das atividades;
+    \item Transparência no progresso do projeto;
+    \item Identificação rápida de problemas;
+    \item Aprendizado em equipe.
+\end{itemize}
+
+\section{Comparação entre Ubuntu e openSUSE}
+
+Durante o desenvolvimento do trabalho, foram utilizados os sistemas operacionais Ubuntu e openSUSE.
+
+\subsection{Comparação Técnica}
+
+\begin{longtable}{|p{4cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Métrica} & \textbf{openSUSE} & \textbf{Ubuntu} \\
+\hline
+User time (s) & 1.13 & 0.00 \\
+\hline
+System time (s) & 0.80 & 0.00 \\
+\hline
+Percent of CPU & 99\% & 100\% \\
+\hline
+Elapsed time & 6:01.94 & 9:00.08 \\
+\hline
+Max resident set size (kB) & 400076 & 1308 \\
+\hline
+Minor page faults & 98880 & 71 \\
+\hline
+Voluntary context switches & 6 & 1 \\
+\hline
+Involuntary context switches & 13 & 2 \\
+\hline
+File system outputs & 8 & 8 \\
+\hline
+Exit status & 0 & 0 \\
+\hline
+\end{longtable}
+
+\subsection{Conclusão da Comparação}
+
+A análise indica que o openSUSE apresentou maior consumo de memória RAM e mais atividade de contexto, porém finalizou o programa em menor tempo total. O Ubuntu apresentou menor sobrecarga de recursos e consumo reduzido de memória.
+
+\subsection{Interface e Usabilidade}
+
+O openSUSE apresenta uma interface moderna e ferramentas avançadas de gerenciamento do sistema. Já o Ubuntu mantém uma interface intuitiva e acessível para iniciantes.
+
+\subsection{Ferramentas e Recursos Nativos}
+
+O openSUSE oferece ferramentas como o YaST para gerenciamento completo do sistema. O Ubuntu possui ampla compatibilidade e facilidade de instalação de pacotes.
+
+\subsection{Documentação e Comunidade}
+
+O Ubuntu possui uma comunidade ampla e extensa documentação. O openSUSE também conta com boa documentação e forte foco em estabilidade e administração do sistema.
+
+\section{Conclusão}
+
+O projeto proporcionou uma compreensão prática sobre instalação, configuração e utilização de distribuições Linux em ambientes virtuais, além da aplicação da metodologia ágil Scrum.
+
+A comparação entre as distribuições permitiu identificar diferenças importantes em desempenho, consumo de recursos, interface e ferramentas nativas.
+
+Além disso, a experiência colaborativa fortaleceu habilidades de comunicação, organização e resolução de problemas, mostrando a importância do trabalho em equipe e da metodologia ágil na condução de projetos acadêmicos.
+
+\section{Referências}
+
+\begin{itemize}
+    \item Ubuntu. Disponível em: \texttt{https://ubuntu.com}
+    \item openSUSE. Disponível em: \texttt{https://www.opensuse.org}
+    \item VMware. Disponível em: \texttt{https://www.vmware.com}
+\end{itemize}
+
+\end{document}
