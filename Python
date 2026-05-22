@@ -1,0 +1,8 @@
+print("Demo en Python ejecutada correctamente.")
+print("Sistema: Ubuntu")
+
+nombre = input("Escribe tu nombre: ")
+
+print("Hola,", nombre) 
+
+python
