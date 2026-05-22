@@ -1,0 +1,3 @@
+nano arquivo.py python3 arquivo.py
+
+nano arquivo.c gcc arquivo.c ./a.out
